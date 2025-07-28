@@ -1,0 +1,44 @@
+# === Existing Entries ===
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# === NEW Recommended Additions ===
+
+# Ignore entire .idea folder (better than individual files)
+.idea/
+
+# Ignore all build folders (inside any module)
+*/build/
+
+# Firebase secrets
+google-services.json
+*.jks
+*.keystore
+*.p12
+*.pem
+*.crt
+
+# Log or environment files
+*.log
+.env
+
+# Backup or temp files
+*.bak
+*.swp
+*~
+
+# macOS and Windows trash files
+Thumbs.db

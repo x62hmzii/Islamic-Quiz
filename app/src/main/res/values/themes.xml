@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme for IslamicQuiz. -->
+    <style name="Base.Theme.IslamicQuiz" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.IslamicQuiz" parent="Base.Theme.IslamicQuiz">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Base application theme for BrainQuiz. -->
+    <style name="Base.Theme.BrainQuiz" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.BrainQuiz" parent="Base.Theme.BrainQuiz">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>

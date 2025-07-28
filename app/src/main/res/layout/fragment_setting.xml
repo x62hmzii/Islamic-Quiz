@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:background="#00bfff" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:context=".fragment.SettingFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- System Heading -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="System"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingVertical="8dp" />
+
+            <!-- System Options -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+                <ImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/world"
+                    />
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Language"
+                    android:layout_marginStart="20dp"
+                    android:paddingVertical="12dp"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="English"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="100dp"
+                    android:paddingVertical="12dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- Account Heading -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accounts"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingVertical="8dp" />
+
+            <!-- Account Options -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <!-- TextView to show user email -->
+                <TextView
+                    android:id="@+id/userEmailTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="User Email"
+                    android:textStyle="bold"
+                    android:textColor="#ff0000"
+                    android:paddingVertical="12dp"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- About Heading -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingVertical="8dp" />
+
+            <!-- About Options -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/share"
+                        />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Invite Someone"
+                    android:id="@+id/inviteTextView"
+                    android:layout_marginStart="20dp"
+                    android:paddingVertical="12dp"
+                    android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/insurance"
+                        />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:id="@+id/privacyPolicyTextView"
+                    android:layout_marginStart="20dp"
+                    android:paddingVertical="12dp"
+                    android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/about"
+                        />
+                    <TextView
+                    android:layout_width="match_parent"
+                        android:id="@+id/about"
+                    android:layout_height="wrap_content"
+                    android:text="About Islamic Quiz App"
+                    android:paddingVertical="12dp"
+                        android:layout_marginStart="20dp"
+                    android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <!-- Logout Button -->
+                <Button
+                    android:id="@+id/logoutButton"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:background="@drawable/round_btn" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

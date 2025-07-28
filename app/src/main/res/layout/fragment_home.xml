@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background ="#73d7ff"
+    tools:context=".fragment.HomeFragment"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginTop="90dp"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            >
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:src="@drawable/minm"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:text="Deen"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="78dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Quiz"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="100dp"
+                android:textColor="#ffa500"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Want to start?"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="140dp"
+                android:textColor="@color/mainColor"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/deal"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="78dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:textSize="16dp"
+                android:text="Welcome to our App"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="78dp"
+                android:textColor="@color/black"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginTop="200dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/startbutton"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:text="Play Now"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
